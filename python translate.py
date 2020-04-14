@@ -13,9 +13,9 @@ row_loc = 1
 column_loc = 1
 #record cell values
 
-while column_loc <= 10:
-    
-    while row_loc <= 10:
+while column_loc <= 50:
+    row_loc = 1
+    while row_loc <= 150:
 
         if ws1.cell(row = row_loc, column = column_loc).value != None:
             text = ws1.cell(row = row_loc, column = column_loc).value
