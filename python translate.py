@@ -9,7 +9,13 @@ ws2 = wb['Sheet2']
 
 #record cell values
 
-A1 = ws1['A1'].value
+#method 1
+#A1 = ws1['A1'].value
+#method 2
+row = 1
+column = 1
+A1 = ws1.cell(row=row, column=column).value
+
 A2 = None
 if ws1['A2'].value != 0:
     A2 = ws1['A2'].value
